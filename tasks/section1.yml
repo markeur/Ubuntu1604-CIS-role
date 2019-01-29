@@ -1,7 +1,7 @@
 ---
 - name: "SCORED | 1_1_1_1 | PATCH | Ensure mounting of cramfs filesystems is disabled"
   lineinfile:
-      dest: /etc/modprobe_d/CIS_conf
+      dest: /etc/modprobe.d/CIS.conf
       regexp: "^(#)?install cramfs(\\s|$)"
       line: "install cramfs /bin/true"
       state: present
@@ -35,7 +35,7 @@
 
 - name: "SCORED | 1_1_1_2 | PATCH | Ensure mounting of freevxfs filesystems is disabled"
   lineinfile:
-      dest: /etc/modprobe_d/CIS_conf
+      dest: /etc/modprobe.d/CIS.conf
       regexp: "^(#)?install freevxfs"
       line: "install freevxfs /bin/true"
       state: present
@@ -66,7 +66,7 @@
 
 - name: "SCORED | 1_1_1_3 | PATCH | Ensure mounting of jffs2 filesystems is disabled"
   lineinfile:
-      dest: /etc/modprobe_d/CIS_conf
+      dest: /etc/modprobe.d/CIS.conf
       regexp: "^(#)?install jffs2(\\s|$)"
       line: "install jffs2 /bin/true"
       state: present
@@ -97,7 +97,7 @@
 
 - name: "SCORED | 1_1_1_4 | PATCH | Ensure mounting of hfs filesystems is disabled"
   lineinfile:
-      dest: /etc/modprobe_d/CIS_conf
+      dest: /etc/modprobe.d/CIS.conf
       regexp: "^(#)?install hfs(\\s|$)"
       line: "install hfs /bin/true"
       state: present
@@ -128,7 +128,7 @@
 
 - name: "SCORED | 1_1_1_5 | PATCH | Ensure mounting of hfsplus filesystems is disabled"
   lineinfile:
-      dest: /etc/modprobe_d/CIS_conf
+      dest: /etc/modprobe.d/CIS.conf
       regexp: "^(#)?install hfsplus(\\s|$)"
       line: "install hfsplus /bin/true"
       state: present
@@ -159,7 +159,7 @@
 
 - name: "SCORED | 1_1_1_6 | PATCH | Ensure mounting of squashfs filesystems is disabled"
   lineinfile:
-      dest: /etc/modprobe_d/CIS_conf
+      dest: /etc/modprobe.d/CIS.conf
       regexp: "^(#)?install squashfs(\\s|$)"
       line: "install squashfs /bin/true"
       state: present
@@ -190,7 +190,7 @@
 
 - name: "SCORED | 1_1_1_7 | PATCH | Ensure mounting of udf filesystems is disabled"
   lineinfile:
-      dest: /etc/modprobe_d/CIS_conf
+      dest: /etc/modprobe.d/CIS.conf
       regexp: "^(#)?install udf(\\s|$)"
       line: "install udf /bin/true"
       state: present
@@ -221,7 +221,7 @@
 
 - name: "SCORED | 1_1_1_8 | PATCH | Ensure mounting of FAT filesystems is disabled"
   lineinfile:
-      dest: /etc/modprobe_d/CIS_conf
+      dest: /etc/modprobe.d/CIS.conf
       regexp: "^(#)?install vfat(\\s|$)"
       line: "install vfat /bin/true"
       state: present
